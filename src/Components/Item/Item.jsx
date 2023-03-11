@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Item = ({ element }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ minWidth: 345, maxWidth: 345 }}>
       <CardActionArea>
         <Link to={`/item/${element.id}`}>
           <CardMedia
@@ -22,10 +22,7 @@ const Item = ({ element }) => {
           <Typography gutterBottom variant="h5" component="div">
             {element.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {element.description}
-          </Typography>
-          <Typography variant="body">{element.price}</Typography>
+          <Typography variant="body">${element.price}</Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
