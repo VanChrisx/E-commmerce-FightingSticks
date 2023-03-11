@@ -16,10 +16,15 @@
   gap: 30%;
 }
 
-li {
-  margin-top: 9%;
-  color: white;
-  list-style-type: none;
+.navbarItem {
+  list-style: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  /* box-shadow: 2px 2px 2px 2px grey; */
+  padding: 7px 10px;
+  border-radius: 10px;
+  background-color: #e1d4c7;
+  text-align: center;
 }
 
 a {
