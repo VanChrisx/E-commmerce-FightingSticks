@@ -1,9 +1,7 @@
 .footerProperty {
-  display: block;
   position: fixed;
-  bottom: 0;
+  bottom: 0vh;
   width: 100%;
   height: 100px;
   background-color: #141414;
-  margin-top: 2%;
 }

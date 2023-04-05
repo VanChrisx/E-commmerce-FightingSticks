@@ -29,30 +29,20 @@ const ItemDetailContainer = () => {
       ...prodSelected,
       quantity: quantity,
     };
-    if (product.stock === 0) {
-      Swal.fire({
-        position: "center",
-        icon: "warning",
-        title: "No Stock",
-        showConfirmButton: false,
-        timer: 1000,
-      });
-    } else {
-      addToCart(product);
-      Swal.fire({
-        position: "center",
-        icon: "success",
-        title: "Product successfully added",
-        showConfirmButton: false,
-        timer: 1000,
-      });
-    }
+    addToCart(product);
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Product successfully added",
+      showConfirmButton: false,
+      timer: 1000,
+    });
   };
 
   let quantity = getQuantityById(Number(id));
 
   return (
-    <div style={{ margin: "5% auto", width: "80%" }}>
+    <div>
       <ItemDetail
         prodSelected={prodSelected}
         onAdd={onAdd}

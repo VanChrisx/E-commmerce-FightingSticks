@@ -18,20 +18,25 @@ const Item = ({ element }) => {
             title={element.title}
           />
         </Link>
-        <CardContent>
+        <CardContent style={{ height: "90px" }}>
           <Typography gutterBottom variant="h5" component="div">
             {element.title}
           </Typography>
-          <Typography variant="body">${element.price}</Typography>
+          <Typography
+            variant="body"
+            style={{ position: "absolute", bottom: "19%" }}
+          >
+            ${element.price}
+          </Typography>
         </CardContent>
+        <CardActions>
+          <Link to={`/item/${element.id}`}>
+            <Button size="small" color="primary" variant="contained">
+              Detalle
+            </Button>
+          </Link>
+        </CardActions>
       </CardActionArea>
-      <CardActions>
-        <Link to={`/item/${element.id}`}>
-          <Button size="small" color="primary">
-            Detalle
-          </Button>
-        </Link>
-      </CardActions>
     </Card>
   );
 };
