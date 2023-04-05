@@ -1,0 +1,31 @@
+.cart__container {
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  margin: 5%;
+}
+
+.products__list--check {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  height: 100%;
+  margin-bottom: 10px;
+  border-right: solid 2px;
+}
+.products__info--check {
+  display: flex;
+  justify-content: space-between;
+}
+.noproducts {
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.noproducts__img {
+  width: 50%;
+  margin: 0 auto;
+}

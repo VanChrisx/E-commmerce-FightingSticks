@@ -9,13 +9,13 @@ import { Link } from "react-router-dom";
 
 const Item = ({ element }) => {
   return (
-    <Card sx={{ minWidth: 345, maxWidth: 345 }}>
+    <Card sx={{ minWidth: 345, maxWidth: 345 }} style={{ height: "350px" }}>
       <CardActionArea>
         <Link to={`/item/${element.id}`}>
           <CardMedia
             sx={{ height: 160, backgroundColor: "whitesmoke" }}
             image={element.img}
-            title="green iguana"
+            title={element.title}
           />
         </Link>
         <CardContent>

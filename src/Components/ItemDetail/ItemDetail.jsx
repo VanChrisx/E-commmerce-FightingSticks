@@ -4,28 +4,33 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
+import ItemCount from "../ItemCount/ItemCount";
 
-const ItemDetail = ({ productSelected }) => {
-  console.log(productSelected);
+const ItemDetail = ({ prodSelected, onAdd, quantity }) => {
   return (
-    <Card sx={{ maxWidth: 500 }}>
-      <CardActionArea>
+    <Card>
+      <CardActionArea style={{ display: "flex" }}>
         <CardMedia
           component="img"
+          style={{ width: "60%", marginRight: "2%", padding: "1%" }}
           height="300"
-          image={productSelected[0].img}
-          alt=""
+          image={prodSelected.img}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {productSelected[0].title}
+          <Typography gutterBottom variant="h4" component="div">
+            {prodSelected.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {productSelected[0].description}
+          <Typography variant="body1" color="text.secondary">
+            {prodSelected.description}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            $ {productSelected[0].price}
+          <Typography variant="body1" color="text.primary">
+            $ {prodSelected.price}
           </Typography>
+          <ItemCount
+            stock={prodSelected.stock}
+            onAdd={onAdd}
+            initial={quantity}
+          />
         </CardContent>
       </CardActionArea>
     </Card>

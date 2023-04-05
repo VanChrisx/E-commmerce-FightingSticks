@@ -22,9 +22,10 @@ const Navbar = () => {
         <ButtonGroup
           variant="contained"
           aria-label="outlined primary button group"
+          style={{ display: "flex", gap: "1%", marginTop: "3%" }}
         >
           <Link to="/" className="styles.navbarItem">
-            <Button>Todos</Button>
+            <Button>All</Button>
           </Link>
           <Link to="/category/razer" className="styles.navbarItem">
             <Button>Razer</Button>

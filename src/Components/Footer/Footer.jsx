@@ -6,7 +6,7 @@ const Footer = () => {
       <img
         src="https://res.cloudinary.com/du0sum3lj/image/upload/v1677276329/pngwing.com_sf1nia.png"
         alt="Stick Logo"
-        style={{ height: "90%" }}
+        style={{ height: "90%"}}
       />
     </div>
   );

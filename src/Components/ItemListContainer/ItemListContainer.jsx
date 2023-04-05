@@ -1,36 +1,50 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { products } from "../../productsMock";
 import ItemList from "../ItemList/ItemList";
+import { PuffLoader } from "react-spinners";
+
+import { db } from "../../firebaseConfig";
+
+import { collection, getDocs, query, where } from "firebase/firestore";
 
 const ItemListContainer = () => {
-  const { categoryId } = useParams();
+  const { categoryName } = useParams();
 
-  const [items, setItems] = useState([]);
-
-  const filterProducts = products.filter(
-    (element) => element.category === categoryId
-  );
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const productList = new Promise((resolve, reject) => {
-      resolve(categoryId ? filterProducts : products);
-    });
+    const itemsCollection = collection(db, "products");
 
-    productList
-      .then((res) => {
-        setItems(res);
-      })
-      .catch((err) => {
-        console.log(err);
+    let consult = undefined;
+
+    if (categoryName) {
+      const q = query(itemsCollection, where("category", "==", categoryName));
+      consult = getDocs(q);
+    } else {
+      consult = getDocs(itemsCollection);
+    }
+    consult.then((res) => {
+      let products = res.docs.map((product) => {
+        return {
+          ...product.data(),
+          id: product.id,
+        };
       });
-  }, [categoryId]);
-
-  console.log(items);
+      setProducts(products);
+    });
+  }, [categoryName]);
 
   return (
     <div>
-      <ItemList items={items} />
+      {products.length > 0 ? (
+        <ItemList items={products} />
+      ) : (
+        <div
+          style={{ display: "flex", justifyContent: "center", marginTop: "5%" }}
+        >
+          <PuffLoader color={"#0033ff"} size={100} />
+        </div>
+      )}
     </div>
   );
 };
