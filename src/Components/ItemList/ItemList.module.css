@@ -1,9 +1,24 @@
 .containerProperty {
+  margin: 0 auto;
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
-  height: 1200px;
+  justify-content: center;
+  height: 80vh;
+  padding: 2rem 0rem;
   gap: 1%;
-  row-gap: 0%;
-  margin: 1% 1% 1% 1%;
-  flex-direction: row;
+}
+
+/*======medium mobile======*/
+
+@media screen and (max-width: 1400px) {
+  .containerProperty {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .containerProperty {
+    width: 95%;
+  }
 }

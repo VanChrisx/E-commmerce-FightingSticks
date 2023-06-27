@@ -6,13 +6,12 @@ import { Button } from "@mui/material";
 const ItemCount = ({ stock, initial = 1, onAdd }) => {
   const [counter, setCounter] = useState(initial);
 
-  if (stock == 0) {
+  if (stock === 0) {
     return (
       <div>
         <Button
           variant="contained"
-          style={{ backgroundColor: "grey", marginTop: "20px" }}
-        >
+          style={{ backgroundColor: "grey", marginTop: "20px" }}>
           Out of stock
         </Button>
       </div>
@@ -34,13 +33,19 @@ const ItemCount = ({ stock, initial = 1, onAdd }) => {
       <div className="container-btn">
         <h3>Quantity: {counter}</h3>
         <div style={{ marginBottom: "5%" }}>
-          <Button variant="outlined" onClick={plus}>
+          <Button
+            variant="outlined"
+            onClick={plus}>
             +
           </Button>
-          <Button variant="contained" onClick={() => onAdd(counter)}>
+          <Button
+            variant="contained"
+            onClick={() => onAdd(counter)}>
             Add to cart
           </Button>
-          <Button variant="outlined" onClick={minus}>
+          <Button
+            variant="outlined"
+            onClick={minus}>
             -
           </Button>
         </div>

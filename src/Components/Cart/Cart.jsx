@@ -64,7 +64,9 @@ const Cart = () => {
         <h2>Thanks for your purchase</h2>
         <h3>Your order ID is {orderId}</h3>
         <Link to="/">
-          <Button style={{ color: "whitesmoke" }} variant="contained">
+          <Button
+            style={{ color: "whitesmoke" }}
+            variant="contained">
             Continue shopping
           </Button>
         </Link>
@@ -83,23 +85,29 @@ const Cart = () => {
                   <Card
                     sx={{ minWidth: 400 }}
                     key={element.id}
-                    style={{ height: 280, marginBottom: 20 }}
-                  >
+                    style={{ height: 280, marginBottom: 20 }}>
                     <CardMedia
                       sx={{ height: 150 }}
                       image={element.img}
                       title={element.title}
                     />
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
+                      <Typography
+                        gutterBottom
+                        variant="h5"
+                        component="div">
                         {element.title}
                       </Typography>
                       <div className="products__info--check">
                         <div>
-                          <Typography variant="body1" color="text.secondary">
+                          <Typography
+                            variant="body1"
+                            color="text.secondary">
                             ${element.price}
                           </Typography>
-                          <Typography variant="body1" color="text.secondary">
+                          <Typography
+                            variant="body1"
+                            color="text.secondary">
                             Quantity:{element.quantity}
                           </Typography>
                         </div>
@@ -107,8 +115,7 @@ const Cart = () => {
                           <CardActions>
                             <Button
                               variant="contained"
-                              onClick={() => deleteElementById(element.id)}
-                            >
+                              onClick={() => deleteElementById(element.id)}>
                               Delete
                             </Button>
                           </CardActions>
@@ -124,10 +131,14 @@ const Cart = () => {
               <h3>Total price: ${getTotalPrice()}</h3>
               {cart.length > 0 && (
                 <CardActions>
-                  <Button onClick={clear} variant="contained">
+                  <Button
+                    onClick={clear}
+                    variant="contained">
                     Empty cart
                   </Button>
-                  <Button variant="contained" onClick={() => setShowForm(true)}>
+                  <Button
+                    variant="contained"
+                    onClick={() => setShowForm(true)}>
                     Go to checkout
                   </Button>
                 </CardActions>
@@ -151,6 +162,7 @@ const Cart = () => {
           <img
             src="https://res.cloudinary.com/du0sum3lj/image/upload/v1680650274/slayer-ggxrd-animation_gyhtj1.gif"
             className="noproducts__img"
+            alt="Error 404 Slayer"
           />
         </div>
       )}

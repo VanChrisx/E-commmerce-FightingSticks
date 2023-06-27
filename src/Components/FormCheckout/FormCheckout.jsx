@@ -83,7 +83,6 @@ const FormCheckout = ({
           label="Phone"
           variant="outlined"
           onChange={(e) => setUserData({ ...userData, phone: e.target.value })}
-          required
         />
 
         <Button

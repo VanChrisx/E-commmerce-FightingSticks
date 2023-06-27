@@ -1,4 +1,3 @@
-import Footer from "./Components/Footer/Footer";
 import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
 import Navbar from "./Components/Navbar/Navbar";
 
@@ -14,15 +13,23 @@ function App() {
       <CartContextProvider>
         <Navbar />
         <Routes>
-          <Route path="/" element={<ItemListContainer />} />
+          <Route
+            path="/"
+            element={<ItemListContainer />}
+          />
           <Route
             path="/category/:categoryName"
             element={<ItemListContainer />}
           />
-          <Route path="/item/:id" element={<ItemDetailContainer />} />
-          <Route path="/cart" element={<Cart />} />
+          <Route
+            path="/item/:id"
+            element={<ItemDetailContainer />}
+          />
+          <Route
+            path="/cart"
+            element={<Cart />}
+          />
         </Routes>
-        <Footer />
       </CartContextProvider>
     </BrowserRouter>
   );

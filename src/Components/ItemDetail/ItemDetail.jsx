@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
+
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import ItemCount from "../ItemCount/ItemCount";
@@ -14,23 +14,30 @@ const ItemDetail = ({ prodSelected, onAdd, quantity }) => {
           display: "flex",
           width: "100%",
           justifyContent: "space-around",
-        }}
-      >
+        }}>
         <div style={{ width: "40%" }}>
-          <img src={prodSelected.img} alt="" style={{ width: "500px" }} />
+          <img
+            src={prodSelected.img}
+            alt=""
+            style={{ width: "500px" }}
+          />
         </div>
         <CardContent style={{ width: "50%" }}>
-          <Typography gutterBottom variant="h2" component="div">
+          <Typography
+            gutterBottom
+            variant="h2"
+            component="div">
             {prodSelected.title}
           </Typography>
-          <Typography variant="body1" color="text.secondary">
+          <Typography
+            variant="body1"
+            color="text.secondary">
             {prodSelected.description}
           </Typography>
           <Typography
             variant="body1"
             color="text.primary"
-            style={{ fontSize: "2em", fontWeight: "bold" }}
-          >
+            style={{ fontSize: "2em", fontWeight: "bold" }}>
             $ {prodSelected.price}
           </Typography>
           <ItemCount
