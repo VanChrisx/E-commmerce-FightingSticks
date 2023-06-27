@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/E-commmerce-FightingSticks/static/css/main.f5d33482.css",
+    "main.js": "/E-commmerce-FightingSticks/static/js/main.9225dbf1.js",
+    "index.html": "/E-commmerce-FightingSticks/index.html",
+    "main.f5d33482.css.map": "/E-commmerce-FightingSticks/static/css/main.f5d33482.css.map",
+    "main.9225dbf1.js.map": "/E-commmerce-FightingSticks/static/js/main.9225dbf1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5d33482.css",
+    "static/js/main.9225dbf1.js"
+  ]
+}

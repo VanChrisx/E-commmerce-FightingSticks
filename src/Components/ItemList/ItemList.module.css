@@ -1,9 +1,0 @@
-.containerProperty {
-  display: flex;
-  flex-wrap: wrap;
-  height: 1200px;
-  gap: 1%;
-  row-gap: 0%;
-  margin: 1% 1% 1% 1%;
-  flex-direction: row;
-}
