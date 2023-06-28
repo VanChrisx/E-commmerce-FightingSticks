@@ -33,7 +33,7 @@ const Item = ({ element }) => {
           </Typography>
         </CardContent>
         <CardActions>
-          <Link to={`/item/${element.id}`}>
+          <Link to={`item/${element.id}`}>
             <Button
               size="small"
               color="primary"
