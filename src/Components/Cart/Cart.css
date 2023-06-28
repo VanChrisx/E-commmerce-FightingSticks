@@ -14,10 +14,12 @@
   margin-bottom: 10px;
   border-right: solid 2px;
 }
+
 .products__info--check {
   display: flex;
   justify-content: space-between;
 }
+
 .noproducts {
   width: 50%;
   height: 78vh;
@@ -25,7 +27,19 @@
   flex-direction: column;
   margin: 0 auto;
 }
+
 .noproducts__img {
   width: 50%;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 790px) {
+  .cart__container {
+    flex-direction: column;
+  }
+  .products__list--check {
+    border-right: inherit;
+    border-bottom: solid 2px;
+    width: 100%;
+  }
 }

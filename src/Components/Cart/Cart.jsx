@@ -41,7 +41,7 @@ const Cart = () => {
     });
   };
 
-  const del = (id) => {
+  const deleteId = (id) => {
     Swal.fire({
       title: "Are you sure?",
       text: "The element will be deleted from the cart",
@@ -83,9 +83,9 @@ const Cart = () => {
               {cart.map((element) => {
                 return (
                   <Card
-                    sx={{ minWidth: 400 }}
+                    sx={{ maxWidth: 400 }}
                     key={element.id}
-                    style={{ height: 280, marginBottom: 20 }}>
+                    style={{ maxheight: 400, marginBottom: 20 }}>
                     <CardMedia
                       sx={{ height: 150 }}
                       image={element.img}
@@ -115,7 +115,7 @@ const Cart = () => {
                           <CardActions>
                             <Button
                               variant="contained"
-                              onClick={() => deleteElementById(element.id)}>
+                              onClick={() => deleteId(element.id)}>
                               Delete
                             </Button>
                           </CardActions>

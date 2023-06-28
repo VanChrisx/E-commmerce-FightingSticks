@@ -5,30 +5,20 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import ItemCount from "../ItemCount/ItemCount";
+import "./ItemDetail.css";
 
 const ItemDetail = ({ prodSelected, onAdd, quantity }) => {
   return (
-    <Card style={{ margin: "5% auto", width: "80%" }}>
+    <Card className="card__container--detail">
       <CardActionArea
-        style={{
-          display: "flex",
-          width: "100%",
-          justifyContent: "space-around",
-        }}>
-        <div style={{ width: "40%" }}>
-          <img
-            src={prodSelected.img}
-            alt=""
-            style={{ width: "500px" }}
-          />
-        </div>
-        <CardContent style={{ width: "50%" }}>
-          <Typography
-            gutterBottom
-            variant="h2"
-            component="div">
-            {prodSelected.title}
-          </Typography>
+        className="card__contains"
+        sx={{ display: "flex" }}>
+        <img
+          src={prodSelected.img}
+          alt="product img"
+        />
+        <CardContent className="card__containt-cont">
+          <h2 className="font__title">{prodSelected.title}</h2>
           <Typography
             variant="body1"
             color="text.secondary">

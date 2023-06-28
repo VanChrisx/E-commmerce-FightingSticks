@@ -21,4 +21,7 @@ code {
   --color-bg-variant: #e1d4c7;
   --color-font: whitesmoke;
   --color-secondary: #f1f11b;
+  --title-font-lg: 4rem;
+  --title-font-md: 3rem;
+  --title-font-sm: 2rem;
 }

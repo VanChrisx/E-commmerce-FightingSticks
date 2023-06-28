@@ -20,7 +20,7 @@
     "sweetalert2": "^11.7.3",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://vanchrisx.github.io/E-commmerce-FightingSticks",
+  "homepage": "https://vanchrisx.github.io/Ecommerce-FightingSticks",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

@@ -14,19 +14,19 @@ function App() {
         <Navbar />
         <Routes>
           <Route
-            path="/"
+            path="Ecommerce-FightingSticks/"
             element={<ItemListContainer />}
           />
           <Route
-            path="/category/:categoryName"
+            path="category/:categoryName"
             element={<ItemListContainer />}
           />
           <Route
-            path="/item/:id"
+            path="item/:id"
             element={<ItemDetailContainer />}
           />
           <Route
-            path="/cart"
+            path="cart"
             element={<Cart />}
           />
         </Routes>

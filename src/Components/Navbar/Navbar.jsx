@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <div className={styles.navbarContainer}>
-      <Link to="/">
+      <Link to="Ecommerce-FightingSticks/">
         <img
           src="https://res.cloudinary.com/du0sum3lj/image/upload/v1677276329/pngwing.com_sf1nia.png"
           alt="Stick Logo"
@@ -42,7 +42,7 @@ const Navbar = () => {
               justifySelf: "center",
             }}>
             <Link
-              to="/"
+              to="Ecommerce-FightingSticks/"
               className="styles.navbarItem">
               <Button>All</Button>
             </Link>
@@ -112,7 +112,7 @@ const Navbar = () => {
               width: "100%",
             }}>
             <Link
-              to="/"
+              to="Ecommerce-FightingSticks"
               className="styles.navbarItem">
               <Button>All</Button>
             </Link>
