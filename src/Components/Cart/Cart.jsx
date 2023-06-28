@@ -156,9 +156,7 @@ const Cart = () => {
         )
       ) : (
         <div className="noproducts">
-          <h2 style={{ fontSize: "3em", textAlign: "center" }}>
-            There's no products in the cart
-          </h2>
+          <h2 className="font__title">There's no products in the cart</h2>
           <img
             src="https://res.cloudinary.com/du0sum3lj/image/upload/v1680650274/slayer-ggxrd-animation_gyhtj1.gif"
             className="noproducts__img"
