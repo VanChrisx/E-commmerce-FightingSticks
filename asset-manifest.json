@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/E-commmerce-FightingSticks/static/css/main.63cb5393.css",
-    "main.js": "/E-commmerce-FightingSticks/static/js/main.d57f2660.js",
-    "index.html": "/E-commmerce-FightingSticks/index.html",
-    "main.63cb5393.css.map": "/E-commmerce-FightingSticks/static/css/main.63cb5393.css.map",
-    "main.d57f2660.js.map": "/E-commmerce-FightingSticks/static/js/main.d57f2660.js.map"
+    "main.css": "/Ecommerce-FightingSticks/static/css/main.be944014.css",
+    "main.js": "/Ecommerce-FightingSticks/static/js/main.e9b12794.js",
+    "index.html": "/Ecommerce-FightingSticks/index.html",
+    "main.be944014.css.map": "/Ecommerce-FightingSticks/static/css/main.be944014.css.map",
+    "main.e9b12794.js.map": "/Ecommerce-FightingSticks/static/js/main.e9b12794.js.map"
   },
   "entrypoints": [
-    "static/css/main.63cb5393.css",
-    "static/js/main.d57f2660.js"
+    "static/css/main.be944014.css",
+    "static/js/main.e9b12794.js"
   ]
 }
