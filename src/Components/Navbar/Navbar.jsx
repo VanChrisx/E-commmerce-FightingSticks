@@ -47,27 +47,27 @@ const Navbar = () => {
               <Button>All</Button>
             </Link>
             <Link
-              to="/category/razer"
+              to="Ecommerce-FightingSticks/category/razer"
               className="styles.navbarItem">
               <Button>Razer</Button>
             </Link>
             <Link
-              to="/category/qanba"
+              to="Ecommerce-FightingSticks/category/qanba"
               className="styles.navbarItem">
               <Button>Qanba</Button>
             </Link>
             <Link
-              to="/category/hori"
+              to="Ecommerce-FightingSticks/category/hori"
               className="styles.navbarItem">
               <Button>Hori</Button>
             </Link>
             <Link
-              to="/category/madcatz"
+              to="Ecommerce-FightingSticks/category/madcatz"
               className="styles.navbarItem">
               <Button>MadCatz</Button>
             </Link>
             <Link
-              to="/category/hitbox"
+              to="Ecommerce-FightingSticks/category/hitbox"
               className="styles.navbarItem">
               <Button>HitBox</Button>
             </Link>
@@ -117,27 +117,27 @@ const Navbar = () => {
               <Button>All</Button>
             </Link>
             <Link
-              to="/category/razer"
+              to="Ecommerce-FightingSticks/category/razer"
               className="styles.navbarItem">
               <Button>Razer</Button>
             </Link>
             <Link
-              to="/category/qanba"
+              to="Ecommerce-FightingSticks/category/qanba"
               className="styles.navbarItem">
               <Button>Qanba</Button>
             </Link>
             <Link
-              to="/category/hori"
+              to="Ecommerce-FightingSticks/category/hori"
               className="styles.navbarItem">
               <Button>Hori</Button>
             </Link>
             <Link
-              to="/category/madcatz"
+              to="Ecommerce-FightingSticks/category/madcatz"
               className="styles.navbarItem">
               <Button>MadCatz</Button>
             </Link>
             <Link
-              to="/category/hitbox"
+              to="Ecommerce-FightingSticks/category/hitbox"
               className="styles.navbarItem">
               <Button>HitBox</Button>
             </Link>

@@ -18,15 +18,15 @@ function App() {
             element={<ItemListContainer />}
           />
           <Route
-            path="category/:categoryName"
+            path="Ecommerce-FightingSticks/category/:categoryName"
             element={<ItemListContainer />}
           />
           <Route
-            path="item/:id"
+            path="Ecommerce-FightingSticks/item/:id"
             element={<ItemDetailContainer />}
           />
           <Route
-            path="cart"
+            path="Ecommerce-FightingSticks/cart"
             element={<Cart />}
           />
         </Routes>

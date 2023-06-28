@@ -10,9 +10,12 @@ const CartWidget = () => {
   const total = getTotalQuantity();
 
   return (
-    <Link to="/cart">
+    <Link to="Ecommerce-FightingSticks/cart">
       <div className={styles.container__cart}>
-        <GiShoppingCart size={70} color={"white"} />
+        <GiShoppingCart
+          size={70}
+          color={"white"}
+        />
         <div className={styles.bubble__counter}>
           <span style={{ color: "yellow", fontWeight: "bold" }}>{total}</span>
         </div>
