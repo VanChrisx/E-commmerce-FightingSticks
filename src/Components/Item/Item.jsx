@@ -12,7 +12,7 @@ const Item = ({ element }) => {
   return (
     <Card className="card__container">
       <CardActionArea>
-        <Link to={`/item/${element.id}`}>
+        <Link to={`/Ecommerce-FightingSticks/item/${element.id}`}>
           <CardMedia
             sx={{ height: 160, backgroundColor: "whitesmoke" }}
             image={element.img}
